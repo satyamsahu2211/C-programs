@@ -1,0 +1,31 @@
+#include<stdio.h>
+int mul(int ,int );
+int sum(int ,int );
+
+int sum(int x,int y)
+{
+int p;
+
+   // p=x*y;
+    p=x+y;
+    return(p);
+}
+int mul(int x,int y)
+{
+int p;
+
+    p =x*y;
+    return(p);
+}
+
+int main()
+{
+   int a,b,c,d ;
+   printf("enter the two number");
+   scanf("%d%d",&a,&b);
+   c=mul(a,b);
+   d=sum(a,b);
+   printf("multiplication of %d",c);
+    printf("multiplication of %d",d);
+   }
+
