@@ -1,0 +1,25 @@
+//program for searching
+#include<stdio.h>
+void main()
+{
+    int x[10],i,n;
+    for(i=0;i<10;i++)
+    {
+        scanf("%d",&x[i]);
+    }
+    printf("Enter the no. want to search:");
+    scanf("%d",&n);
+
+    for(i=0;i<10;i++)
+    {
+        if(x[i]==n)
+        {
+            printf("search no. is at location %d",i++);
+            break;
+        }
+        if(x[i]==n)
+        {
+            printf("search no. is not available:");
+        }
+    }
+}
