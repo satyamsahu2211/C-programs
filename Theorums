@@ -1,0 +1,56 @@
+#include<stdio.h>
+int main(){
+/*int i,j,n,x;
+scanf("%d",&n);
+x=1;
+for(i=1;i<=n;i++)
+    {
+    for(j=1;j<=i;j++)
+    {
+    printf("%d",x);
+    x++;
+    }
+    printf("\n");
+}*/
+/*int i;
+scanf("%d",i);
+
+for(i=1;i<=5;i++){
+    if(i==3){
+        break;
+    }printf("%d\n",i);
+}*//*int i,j,B[100],n;
+printf("enter any number :");
+scanf("%d",&n);
+i=0;
+while(n>0){
+    B[i]=n%2;
+    n=n/2;
+    i++;
+}
+for(j=i-1;j>=0;j--){
+   printf("%d",B[j]);
+          }*/
+  /*   int i,n,rem,sum=0,long;
+     long int i;
+     i=0;
+printf("enter any number :");
+scanf("%ld",&n);
+i=0;
+while(n>0){
+    B[i]=n%10;
+    sum=sum+rem*pow(2,i);
+    n=n/2;
+    i++;
+}print("%d"sum);*/
+int i,n,mark[100];
+scanf("%d",&n);
+printf("enter number %d",n);
+for(i=0;i<n;i++){
+
+    scanf("%d",&mark[i]);
+    printf("number is %d",i);
+}
+return 0;
+}
+
