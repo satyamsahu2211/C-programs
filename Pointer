@@ -1,0 +1,16 @@
+#include<stdio.h>
+void main()
+{
+    void multiply(int*,int*);
+    int x1,x2;
+    printf("Enter two number:");
+    scanf("%d%d",&x1,&x2);
+    multiply(&x1,&x2);
+
+}
+void multiply(int *p1,int *p2)
+{
+    int result;
+    result=*p1+*p2;
+    printf("%d",result);
+}
