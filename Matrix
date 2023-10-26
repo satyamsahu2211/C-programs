@@ -1,0 +1,48 @@
+#include<stdio.h>
+
+int main(){
+int a[3][3],b[3][3],c[3][3];
+void input(int[3][3],int,int);
+void output(int[3][3],int,int);
+void mul(int[3][3],int[3][3],int[3][3],int,int);
+    input(a,3,3);
+    printf("\n");
+    output(a,3,3);
+    input(b,3,3);
+    printf("\n");
+    output(b,3,3);
+    mul(a,b,c,3,3);
+    printf("\n");
+    output(c,3,3);
+}
+void input(int a[3][3],int r, int c){
+    int i,j;
+    for(i=0;i<r;i++){
+        for(j=0;j<c;j++){
+        	printf("Enter vlaue ofmatrix %d %d ",i,j);
+            scanf("%d",&a[i][j]);
+        }
+    }
+}
+void output(int a[3][3],int r,int c){
+    int i,j;
+    for(i=0; i<r; i++){
+        for(j=0; j<c; j++){
+            printf("%d\t",a[i][j]);
+        }
+        printf("\n");
+
+    }
+}
+
+void mul(int a[3][3],int b[3][3],int c[3][3],int row,int col){
+    int i,j,k;
+    for(i=0; i<row; i++){
+        for(j=0; j<col; j++){
+            c[i][j]=0;
+            for(k=0; k<col ; k++){
+                c[i][j] += a[i][k]*b[k][j];
+            }
+        }
+    }
+}
